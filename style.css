@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: radial-gradient(circle at top left, #0f0f0f, #1a1a1a 80%);
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  width: 100%;
+}
+
+.login-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 2px solid rgba(255, 215, 0, 0.2);
+  box-shadow: 0 0 60px rgba(255, 215, 0, 0.15);
+  border-radius: 50px;
+  padding: 3rem;
+  max-width: 420px;
+  width: 100%;
+  backdrop-filter: blur(30px);
+  text-align: center;
+  animation: floatIn 1s ease-out;
+}
+
+@keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+.login-card h2 {
+  font-size: 2rem;
+  color: gold;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 2rem;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.input-group label {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: gold;
+  font-size: 14px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 16px 12px 40px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  border-radius: 30px;
+  color: #fff;
+  font-size: 14px;
+  transition: border 0.3s ease;
+}
+
+.input-group input::placeholder {
+  color: #bbb;
+}
+
+.input-group input:focus {
+  border: 1px solid gold;
+  outline: none;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #bbb;
+  margin-bottom: 1.5rem;
+}
+
+.options a {
+  color: gold;
+  text-decoration: none;
+}
+
+.options a:hover {
+  text-decoration: underline;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #ffd700, #e0c200);
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #e0c200, #ffd700);
+  box-shadow: 0 0 40px rgba(255, 215, 0, 0.6);
+}
+
+.signup {
+  margin-top: 1.5rem;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.signup a {
+  color: gold;
+  text-decoration: none;
+}
+
+.signup a:hover {
+  text-decoration: underline;
+}
